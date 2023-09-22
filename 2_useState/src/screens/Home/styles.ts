@@ -46,4 +46,11 @@ export const styles = StyleSheet.create({
         color: "white",
         fontWeight: "600",
     },
+
+    text: {
+        color: "white",
+        fontSize: 10,
+        width: "60%",
+        
+    }
 });

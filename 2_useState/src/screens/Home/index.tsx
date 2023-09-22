@@ -1,11 +1,17 @@
 import { useState } from 'react';
 import { styles } from './styles';
-import { Text, TextInput, View, TouchableOpacity, ScrollView} from 'react-native';
+import { Text, TextInput, View, TouchableOpacity, Alert} from 'react-native';
 
 export default function Home(){
     
     const [name, setName] = useState('')
 
+
+    function handleUserAdd() {
+        console.log("Nome Completo:" +  name)
+
+        Alert.alert("Nome Completo:" +  name)
+    }
 
     return(
             <View style={styles.container}>
@@ -19,6 +25,7 @@ export default function Home(){
                     onChangeText={setName}
                     value={name}
                 />
+                <Text style={styles.text}>{name}</Text>
 
                 <TextInput
                     style={styles.input}
@@ -78,7 +85,7 @@ export default function Home(){
                     id='language'
                 />
 
-                <TouchableOpacity style={styles.btn}>
+                <TouchableOpacity style={styles.btn} onPress={handleUserAdd}>
                     <Text style={styles.btnTxt}>Cadastrar</Text>
                 </TouchableOpacity>
             </View>
