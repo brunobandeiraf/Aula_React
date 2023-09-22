@@ -3,69 +3,77 @@ import { Text, TextInput, View, TouchableOpacity, ScrollView} from 'react-native
 
 export default function Home(){
     return(
-        <ScrollView>
             <View style={styles.container}>
                 <Text style={styles.title}>Preencha os dados</Text>
         
-                <Text style={styles.textInput}>Nome Completo</Text>
                 <TextInput
                     style={styles.input}
-                    id='nome'
+                    placeholder='Nome Completo'
+                    placeholderTextColor="black" 
+                    id='name'
                 />
 
-                <Text style={styles.textInput}>Gênero</Text>
                 <TextInput
                     style={styles.input}
-                    id='genero'
+                    placeholder='Gênero'
+                    placeholderTextColor="black" 
+                    id='gender'
                 />
 
-                <Text style={styles.textInput}>Data de nascimento</Text>
                 <TextInput
                     style={styles.input}
+                    placeholder='Data de Nascimento'
+                    placeholderTextColor="black" 
                     id='data'
                 />
 
-                <Text style={styles.textInput}>Usuário</Text>
                 <TextInput
                     style={styles.input}
-                    id='usuario'
+                    placeholder='Nome de Usuário'
+                    placeholderTextColor="black" 
+                    id='user'
                 />
 
-                <Text style={styles.textInput}>Senha</Text>
                 <TextInput
                     style={styles.input}
                     secureTextEntry
-                    id='senha'
+                    placeholder='Senha'
+                    placeholderTextColor="black" 
+                    id='password'
                 />
 
-                <Text style={styles.textInput}>E-mail</Text>
                 <TextInput
                     style={styles.input}
+                    placeholder='E-mail'
+                    placeholderTextColor="black" 
                     id='email'
                 />
 
-                <Text style={styles.textInput}>Confirme seu email</Text>
                 <TextInput
                     style={styles.input}
-                    id='confirmarEmail'
+                    placeholder='Confirme seu e-mail'
+                    placeholderTextColor="black" 
+                    id='confirmEmail'
                 />
 
-                <Text style={styles.textInput}>CPF</Text>
                 <TextInput
                     style={styles.input}
+                    //keyboardType="numeric"
+                    placeholder='CPF'
+                    placeholderTextColor="black" 
                     id='cpf'
                 />
 
-                <Text style={styles.textInput}>Idioma</Text>
                 <TextInput
                     style={styles.input}
-                    id='idioma'
+                    placeholder='Idioma'
+                    placeholderTextColor="black" 
+                    id='language'
                 />
 
                 <TouchableOpacity style={styles.btn}>
-                    <Text style={styles.btnTxt}>cadastrar</Text>
+                    <Text style={styles.btnTxt}>Cadastrar</Text>
                 </TouchableOpacity>
             </View>
-        </ScrollView>
     )
 }

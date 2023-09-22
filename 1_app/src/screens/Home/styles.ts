@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     container: {
         backgroundColor: '#1F1E25',
-        //width: '100%',
         
         flex: 1,
         alignItems: 'center',
@@ -13,45 +12,33 @@ export const styles = StyleSheet.create({
     title: {
         color: "#fff",
         fontSize: 25,
-        paddingTop: 100,
-        paddingBottom: 35,
-        fontWeight: 'bold'
-    },
+        fontWeight: 'bold',
 
-    textInput: {
-        color: "#fff",
-        fontSize: 14,
-        width: '60%',
-        fontWeight: '500',
-        marginTop: 20,
-    },
-
-    inputValue: {
-        fontSize: 14,
-        //width: '60%',
-        color: 'black',
-        marginTop: 50,
-        marginBottom: 20,
+        paddingBottom: 10,
     },
 
     input: {
-        color: "#363636",
+        color: "#000",
+        backgroundColor: "#fff",
+        borderRadius: 5,
+        fontWeight: "200",
+        
         width: '60%',
         margin: 10,
-        borderRadius: 5,
         padding: 10,
-        backgroundColor: "#dedede",
-        fontWeight: "200"
     },
 
     btn: {
-        backgroundColor: "purple",
-        padding: 15,
-        borderRadius: 5,
-        fontSize: 13,
+        backgroundColor: "red",
+        fontSize: 14,
+        width: "60%",
+        
         margin: 10,
+        padding: 15,
         marginBottom: 20,
-    
+        borderRadius: 5,
+
+        alignItems: 'center',
     },
 
     btnTxt: {
